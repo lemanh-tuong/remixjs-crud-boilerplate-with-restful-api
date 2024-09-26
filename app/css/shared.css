@@ -1254,43 +1254,43 @@
 
 
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Select/src/css/SelectMultiple.css */
-.SelectMultiple__container.yy-select {
+.AntSelectMultiple__container.yy-select {
   width: 100%;
 }
 
-.SelectMultiple__loading {
+.AntSelectMultiple__loading {
   padding-bottom: 16px;
   padding-top: 16px;
   text-align: center;
 }
 
-.SelectMultiple__readOnly {
+.AntSelectMultiple__readOnly {
   pointer-events: none;
 }
 
 
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Select/src/css/SelectSingle.css */
-.SelectSingle__container.yy-select {
+.AntSelectSingle__container.yy-select {
   width: 100%;
 }
 
-.SelectSingle__loading {
+.AntSelectSingle__loading {
   padding-bottom: 16px;
   padding-top: 16px;
   text-align: center;
 }
 
-.SelectSingle__readOnly {
+.AntSelectSingle__readOnly {
   pointer-events: none;
 }
 
 
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Select/src/css/SelectTag.css */
-.SelectTag__container.yy-select {
+.AntSelectTag__container.yy-select {
   width: 100%;
 }
 
-.SelectTag__readOnly {
+.AntSelectTag__readOnly {
   pointer-events: none;
 }
 
