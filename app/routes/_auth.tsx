@@ -1,7 +1,7 @@
 import { LoaderFunctionArgs, redirect } from '@remix-run/node';
 import { isEmpty } from 'ramda';
 import { AuthLayout } from '~/layouts/AuthLayout/AuthLayout';
-import { authSessionStorage } from '~/packages/common/Auth/utils/sessionStorage';
+import { authSessionStorage } from '~/packages/_Common/Auth/utils/sessionStorage';
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const session = await authSessionStorage.getSession(request);

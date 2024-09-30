@@ -1,4 +1,4 @@
-import { branding } from '../../../specific/Branding/locales/branding';
+import { branding } from '../../../Branding/locales/branding';
 import { auth } from '../../Auth/locales/auth';
 import { common } from './locales/common';
 import { dashboard } from './locales/dashboard';

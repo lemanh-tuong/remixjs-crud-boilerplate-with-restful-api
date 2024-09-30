@@ -1,15 +1,15 @@
 import { ActionFunctionArgs, json, redirect, TypedResponse } from '@remix-run/node';
 import { validateFormData } from 'remix-hook-form';
 import { PageErrorBoundary } from '~/components/PageErrorBoundary/PageErrorBoundary';
-import { i18nServer } from '~/packages/common/I18n/i18n.server';
+import { i18nServer } from '~/packages/_Common/I18n/i18n.server';
 import {
   BrandingFormMutationProps,
   BrandingFormMutationValues,
-} from '~/packages/specific/Branding/components/FormMutation/FormMutation';
-import { getFormMutationResolver } from '~/packages/specific/Branding/components/FormMutation/zodResolver';
-import { Branding } from '~/packages/specific/Branding/models/Branding';
-import { updateBranding } from '~/packages/specific/Branding/services/updateBranding';
-import { brandingFormMutationValuesToCreateBrandingService } from '~/packages/specific/Branding/utils/brandingFormMutationValuesToCreateBrandingService';
+} from '~/packages/Branding/components/FormMutation/FormMutation';
+import { getFormMutationResolver } from '~/packages/Branding/components/FormMutation/zodResolver';
+import { Branding } from '~/packages/Branding/models/Branding';
+import { updateBranding } from '~/packages/Branding/services/updateBranding';
+import { brandingFormMutationValuesToCreateBrandingService } from '~/packages/Branding/utils/brandingFormMutationValuesToCreateBrandingService';
 import { SimpleActionResponse } from '~/types/SimpleActionResponse';
 import { fetcherFormData } from '~/utils/functions/formData/fetcherFormData';
 import { handleCatchClauseAsSimpleResponse } from '~/utils/functions/handleErrors/handleCatchClauseSimple';

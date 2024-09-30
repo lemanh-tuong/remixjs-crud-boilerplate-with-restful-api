@@ -2,9 +2,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { ActionFunctionArgs, TypedResponse, json, redirect } from '@remix-run/node';
 import { validateFormData } from 'remix-hook-form';
 import { TypeOf, object, string } from 'zod';
-import { SessionData } from '~/packages/common/Auth/models/SessionData';
-import { refreshToken } from '~/packages/common/Auth/services/refreshToken';
-import { authSessionStorage } from '~/packages/common/Auth/utils/sessionStorage';
+import { SessionData } from '~/packages/_Common/Auth/models/SessionData';
+import { refreshToken } from '~/packages/_Common/Auth/services/refreshToken';
+import { authSessionStorage } from '~/packages/_Common/Auth/utils/sessionStorage';
 
 export interface RefreshTokenResponse {
   message: string;

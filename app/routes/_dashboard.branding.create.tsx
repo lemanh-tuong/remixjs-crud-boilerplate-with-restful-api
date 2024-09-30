@@ -7,18 +7,18 @@ import { ModalConfirmNavigate } from '~/components/ModalConfirmNavigate/ModalCon
 import { MutationFooter } from '~/components/Mutation/Footer';
 import { MutationHeader } from '~/components/Mutation/Header';
 import { PageErrorBoundary } from '~/components/PageErrorBoundary/PageErrorBoundary';
-import { i18nServer } from '~/packages/common/I18n/i18n.server';
+import { i18nServer } from '~/packages/_Common/I18n/i18n.server';
 import {
   BrandingFormMutation,
   BrandingFormMutationActions,
   BrandingFormMutationProps,
   BrandingFormMutationValues,
-} from '~/packages/specific/Branding/components/FormMutation/FormMutation';
-import { getFormMutationResolver } from '~/packages/specific/Branding/components/FormMutation/zodResolver';
-import { Branding } from '~/packages/specific/Branding/models/Branding';
-import { createBranding } from '~/packages/specific/Branding/services/createBranding';
-import { brandingFormMutationValuesToCreateBrandingService } from '~/packages/specific/Branding/utils/brandingFormMutationValuesToCreateBrandingService';
-import { brandingModelToDefaultValuesOfFormMutation } from '~/packages/specific/Branding/utils/brandingModelToDefaultValuesOfFormMutation';
+} from '~/packages/Branding/components/FormMutation/FormMutation';
+import { getFormMutationResolver } from '~/packages/Branding/components/FormMutation/zodResolver';
+import { Branding } from '~/packages/Branding/models/Branding';
+import { createBranding } from '~/packages/Branding/services/createBranding';
+import { brandingFormMutationValuesToCreateBrandingService } from '~/packages/Branding/utils/brandingFormMutationValuesToCreateBrandingService';
+import { brandingModelToDefaultValuesOfFormMutation } from '~/packages/Branding/utils/brandingModelToDefaultValuesOfFormMutation';
 import { notification } from '~/shared/ReactJS';
 import { useCallbackPrompt } from '~/shared/RemixJS/client';
 import { SimpleActionResponse } from '~/types/SimpleActionResponse';

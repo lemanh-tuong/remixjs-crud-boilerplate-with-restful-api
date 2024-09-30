@@ -20,7 +20,7 @@ import { PageErrorBoundary } from './components/PageErrorBoundary/PageErrorBound
 import { SplashScreen } from './components/SplashScreen/SplashScreen';
 import sharedCss from './css/shared.css';
 import tailwindCss from './css/tailwind.css';
-import { i18nServer, localeCookie } from './packages/common/I18n/i18n.server';
+import { i18nServer, localeCookie } from './packages/_Common/I18n/i18n.server';
 import { Empty, FixedProgressLoader, ImplicitFixSSR, Notification, ThemeProvider, usePrevious } from '~/shared/ReactJS';
 import { useChangeLanguage } from '~/shared/RemixJS/client';
 

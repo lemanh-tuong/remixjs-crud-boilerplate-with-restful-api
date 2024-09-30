@@ -1,5 +1,5 @@
 import { useGetAvatarDropdown } from '../hooks/useGetAvatarDropdown';
-import { SessionData } from '~/packages/common/Auth/models/SessionData';
+import { SessionData } from '~/packages/_Common/Auth/models/SessionData';
 import { Dropdown } from '~/shared/ReactJS';
 import { Image } from '~/shared/RemixJS/client';
 

@@ -5,7 +5,7 @@ import { isbot } from 'isbot';
 import { renderToPipeableStream } from 'react-dom/server';
 import { I18nextProvider } from 'react-i18next';
 import { PassThrough } from 'node:stream';
-import { initRemixI18n } from './packages/common/I18n/i18n.server';
+import { initRemixI18n } from './packages/_Common/I18n/i18n.server';
 import type { AppLoadContext, EntryContext } from '@remix-run/node';
 
 const ABORT_DELAY = 5_000;

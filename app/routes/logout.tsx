@@ -1,5 +1,5 @@
 import type { ActionFunctionArgs, LoaderFunctionArgs } from '@remix-run/node';
-import { authSessionStorage } from '~/packages/common/Auth/utils/sessionStorage';
+import { authSessionStorage } from '~/packages/_Common/Auth/utils/sessionStorage';
 
 export const action = async ({ request }: ActionFunctionArgs) => {
   const url = new URL(request.url);

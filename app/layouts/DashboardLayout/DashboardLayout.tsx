@@ -6,7 +6,7 @@ import { Logo } from './components/Logo';
 import { Notification } from './components/Notification';
 import { UserDropdown } from './components/UserDropdown';
 import { useGetNavData } from './hooks/useGetNavData';
-import { SessionData } from '~/packages/common/Auth/models/SessionData';
+import { SessionData } from '~/packages/_Common/Auth/models/SessionData';
 import { Button, MenuVertical, useMediaQuery } from '~/shared/ReactJS';
 import { LayoutContainer, LayoutContent, LayoutHeader, LayoutSider } from '~/shared/ReactJS';
 import './styles.css';

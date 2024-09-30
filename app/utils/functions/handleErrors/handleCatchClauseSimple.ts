@@ -5,7 +5,7 @@ import { handleGetMessageToToast } from './handleGetMessageToToast';
 import { handleNativeError } from './handleNativeError';
 import { handleServiceException } from './handleServiceException';
 import { handleUnknownError } from './handleUnknownError';
-import { SessionExpiredFullUrl } from '~/packages/common/Auth/constants/SessionExpired';
+import { SessionExpiredFullUrl } from '~/packages/_Common/Auth/constants/SessionExpired';
 import { StringMappingToStatusCode } from '~/services/constants/StringMappingToStatusCode';
 import { ServiceException } from '~/services/utils/ServiceException';
 import { AnyRecord } from '~/shared/TypescriptUtilities';

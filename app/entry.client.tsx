@@ -9,7 +9,7 @@ import i18next from 'i18next';
 import { startTransition } from 'react';
 import { hydrateRoot } from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
-import { initRemixI18n } from './packages/common/I18n/i18n.client';
+import { initRemixI18n } from './packages/_Common/I18n/i18n.client';
 
 const hydrate = async () => {
   await initRemixI18n();

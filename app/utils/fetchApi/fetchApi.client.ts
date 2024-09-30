@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { SessionExpiredFullUrl } from '~/packages/common/Auth/constants/SessionExpired';
+import { SessionExpiredFullUrl } from '~/packages/_Common/Auth/constants/SessionExpired';
 import { RefreshTokenResponse, RefreshTokenData } from '~/routes/_auth.refresh-token';
 import { FetchAPI } from '~/shared/Utilities';
 

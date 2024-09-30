@@ -1,7 +1,7 @@
 import { LogoutOutlined, UserOutlined } from '@ant-design/icons';
 import { useFetcher } from '@remix-run/react';
 import { useTranslation } from 'react-i18next';
-import { SessionExpiredPath } from '~/packages/common/Auth/constants/SessionExpired';
+import { SessionExpiredPath } from '~/packages/_Common/Auth/constants/SessionExpired';
 
 export const useGetAvatarDropdown = () => {
   const { t } = useTranslation(['dashboard_layout']);

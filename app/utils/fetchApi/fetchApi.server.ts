@@ -1,6 +1,6 @@
 import { ActionFunctionArgs, LoaderFunctionArgs, redirect } from '@remix-run/node';
 import axios, { AxiosResponse } from 'axios';
-import { authSessionStorage } from '~/packages/common/Auth/utils/sessionStorage';
+import { authSessionStorage } from '~/packages/_Common/Auth/utils/sessionStorage';
 import { RefreshTokenResponse, RefreshTokenData } from '~/routes/_auth.refresh-token';
 import { FetchAPI } from '~/shared/Utilities';
 
