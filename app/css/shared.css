@@ -517,6 +517,10 @@
 
 
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Checkbox/src/styles.css */
+.AntCheckbox__container {
+  align-items: center;
+}
+
 .AntCheckbox__container .yy-checkbox-indeterminate .yy-checkbox-inner::after {
   border-radius: 2px;
 }
@@ -1253,6 +1257,13 @@
 }
 
 
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Segmented/src/styles.css */
+.AntSegmented__container.yy-segmented .yy-segmented-item,
+.AntSegmented__container.yy-segmented .yy-segmented-thumb {
+  border-radius: calc(var(--yy-border-radius) - 1px);
+}
+
+
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Select/src/css/SelectMultiple.css */
 .AntSelectMultiple__container.yy-select {
   width: 100%;
@@ -1295,6 +1306,38 @@
 }
 
 
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/SelectAsTreeLayout/src/css/SelectMultipleAsTreeLayout.css */
+.AntSelectMultipleAsTreeLayout__container {
+  width: 100%;
+}
+
+.AntSelectMultipleAsTreeLayout__loading {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.AntSelectMultipleAsTreeLayout__readOnly {
+  pointer-events: none;
+}
+
+
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/SelectAsTreeLayout/src/css/SelectSingleAsTreeLayout.css */
+.AntSelectSingleAsTreeLayout__container {
+  width: 100%;
+}
+
+.AntSelectSingleAsTreeLayout__loading {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.AntSelectSingleAsTreeLayout__readOnly {
+  pointer-events: none;
+}
+
+
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Slider/src/css/RangeSlider.css */
 .AntRangeSlider__readOny {
   pointer-events: none;
@@ -1316,9 +1359,188 @@
 }
 
 
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Table/src/components/ConfigColumns/components/SortableItem/styles.css */
+.AntTableQuickConfigColumns__SortableItem {
+  background-color: #fff;
+  box-shadow:
+    0 0 0 calc(1px / var(--scale-x, 1)) rgba(63, 63, 68, 0.05),
+    0 1px calc(3px / var(--scale-x, 1)) 0 rgba(34, 33, 81, 0.15);
+  padding-block: var(--yy-padding-xxs);
+  padding-inline: var(--yy-padding-xs);
+}
+
+
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Table/src/components/ConfigColumns/css/AdvanceConfigColumns.css */
+.AntTableAdvanceConfigColumns__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AntTableAdvanceConfigColumns__settingsViewTrigger {
+  cursor: pointer;
+  font-size: var(--yy-font-size-xl);
+}
+
+.AntTableAdvanceConfigColumns__settingsViewContent {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.AntTableAdvanceConfigColumns__columnsSelectable {
+  border: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-color-border-secondary);
+  border-radius: var(--yy-border-radius);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-height: 60dvh;
+  overflow: hidden;
+  padding-left: var(--yy-padding-sm);
+  padding-top: var(--yy-padding-sm);
+}
+.AntTableAdvanceConfigColumns__columnsSelectableHeader {
+  flex-shrink: 0;
+}
+.AntTableAdvanceConfigColumns__columnsSelectableContent {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.AntTableAdvanceConfigColumns__columnsSelectableList {
+  display: grid;
+  flex: 1 1 0%;
+  gap: 0.25rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-left: var(--yy-padding-sm);
+}
+.AntTableAdvanceConfigColumns__columnsSelectableContentPlaceholder {
+  padding-bottom: 0.5rem;
+}
+
+.AntTableAdvanceConfigColumns__columnsSortable {
+  border: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-color-border-secondary);
+  border-radius: var(--yy-border-radius);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-height: 60dvh;
+  overflow: hidden;
+  padding-left: var(--yy-padding-sm);
+  padding-top: var(--yy-padding-sm);
+}
+.AntTableAdvanceConfigColumns__columnsSortableHeader {
+  padding-bottom: 0.5rem;
+}
+.AntTableAdvanceConfigColumns__columnsSortableContent {
+  flex: 1 1 0%;
+  margin-left: calc(var(--yy-padding-sm) * -1);
+  overflow-y: auto;
+}
+
+
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Table/src/components/ConfigColumns/css/QuickConfigColumns.css */
+.AntTableQuickConfigColumns__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AntTableQuickConfigColumns__settingsViewTrigger {
+  cursor: pointer;
+  font-size: var(--yy-font-size-xl);
+}
+
+.AntTableQuickConfigColumns__settingsViewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.AntTableQuickConfigColumns__settingsViewContentHeader {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  padding: var(--yy-popover-inner-padding);
+  padding-bottom: 0px;
+}
+
+.AntTableQuickConfigColumns__listColumns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 196px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.AntTableQuickConfigColumns__columnItem {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-width: 180px;
+}
+
+.AntTableQuickConfigColumns__columnItem--invisible {
+  opacity: 0.3;
+}
+
+.AntTableQuickConfigColumns__columnInfo {
+  align-items: center;
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 4px;
+}
+
+.AntTableQuickConfigColumns__columnName {
+  margin-bottom: 2px;
+}
+
+.AntTableQuickConfigColumns__popover .yy-popover-inner {
+  overflow: hidden;
+  padding: 0px !important;
+}
+
+
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Table/src/components/SortIcon/styles.css */
-.AntSortIcon__container {
+.AntTableSortIcon__container {
   font-size: 14px;
+}
+
+
+/* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Table/src/components/StickyAction/styles.css */
+.AntTableStickyAction__container {
+  background-color: var(--yy-color-primary-active);
+  border-color: var(--yy-color-primary-active);
+  border-radius: var(--yy-border-radius);
+  bottom: 64px;
+  box-shadow:
+    0.3px 0.5px 0.7px hsl(0deg 0% 57% / 0.33),
+    0.7px 1.4px 1.8px -0.6px hsl(0deg 0% 57% / 0.33),
+    1.4px 2.7px 3.4px -1.2px hsl(0deg 0% 57% / 0.33),
+    2.8px 5.5px 6.9px -1.9px hsl(0deg 0% 57% / 0.33),
+    5.4px 10.8px 13.6px -2.5px hsl(0deg 0% 57% / 0.33);
+  color: var(--yy-color-text-light-solid);
+  left: 50%;
+  opacity: 0;
+  padding-block: 8px;
+  padding-inline: 12px;
+  position: fixed;
+  transform: translate(-50%, 0);
+  transition: 0.2s all;
+  will-change: transform;
+  z-index: 10;
+}
+
+.AntTableStickyAction__visible {
+  opacity: 1;
+  transform: translate(-50%, -40px);
 }
 
 
@@ -1407,6 +1629,66 @@
   z-index: 10;
 }
 /* #endregion */
+
+/* #region Rounded table */
+.AntTable__container.yy-table-wrapper .yy-table .yy-table-container {
+  border-inline-start: none !important;
+}
+
+/* Every first cell of row */
+
+.AntTable__container.yy-table-wrapper
+  .yy-table
+  .yy-table-row
+  .yy-table-cell:first-child,
+.AntTable__container.yy-table-wrapper
+  .yy-table
+  .yy-table-header
+  .yy-table-cell:first-child {
+  border-inline-start: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-table-border-color);
+}
+
+/* Bottom left of table */
+.AntTable__container.yy-table-wrapper
+  .yy-table
+  .yy-table-row:last-child
+  .yy-table-cell:first-child {
+  border-block-end: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-table-border-color);
+  border-bottom-left-radius: var(--yy-table-header-border-radius);
+  border-inline-start: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-table-border-color);
+}
+/* Bottom right of table */
+.AntTable__container.yy-table-wrapper
+  .yy-table
+  .yy-table-row:last-child
+  .yy-table-cell:last-child {
+  border-block-end: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-table-border-color);
+  border-bottom-right-radius: var(--yy-table-header-border-radius);
+  border-inline-end: var(--yy-line-width) var(--yy-line-type)
+    var(--yy-table-border-color);
+}
+
+/* #endregion */
+
+.AntTable__container.yy-table-wrapper .yy-table .yy-table-title:empty {
+  display: none;
+}
+
+.AntTable__container .AntCell__hasCheckbox {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.AntTable__container .AntCell__selected,
+.AntTable__container .AntCell__selected ~ .yy-table-cell {
+  background-color: var(--yy-color-primary-bg);
+}
 
 
 /* Extracted from app/shared/reactjs/components/DesignSystem/AntDesign/components/Tabs/src/styles.css */
@@ -1788,6 +2070,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  --color-error: rgb(255, 77, 79);
 }
 
 .Field__label {
@@ -1798,7 +2081,7 @@
 }
 
 .Field__required-mark {
-  color: rgb(255, 77, 79);
+  color: var(--color-error);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -1806,7 +2089,7 @@
 }
 
 .Field__error {
-  color: rgb(255, 77, 79);
+  color: var(--color-error);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -1817,6 +2100,29 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
+}
+
+.Field__withError .yy-checkbox-inner,
+.Field__withError .yy-tree-checkbox-inner,
+.Field__withError .yy-color-picker-trigger,
+.Field__withError .yy-picker,
+.Field__withError .yy-input-outlined,
+.Field__withError .yy-input-number,
+.Field__withError .yy-radio-inner,
+.Field__withError .yy-select-selector,
+.Field__withError .yy-upload-drag {
+  border-color: var(--color-error) !important;
+}
+.Field__withError .yy-rate-star svg {
+  color: var(--color-error) !important;
+}
+
+.Field__withError .yy-slider-track,
+.Field__withError .yy-switch {
+  background-color: var(--color-error) !important;
+}
+.Field__withError .yy-slider-handle::after {
+  box-shadow: 0 0 0 var(--yy-slider-handle-line-width-hover) var(--color-error) !important;
 }
 
 
